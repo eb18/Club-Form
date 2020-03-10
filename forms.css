@@ -1,0 +1,23 @@
+.paper{
+    border: 0.02rem solid black;
+    margin-right: 25%;
+    margin-left: 25%;
+    padding: 0.25rem;
+}
+
+input{
+    margin-bottom: 3rem;
+}
+
+label{
+    margin-left: 0.5rem;
+}
+
+.paper form{
+    font-size: 125%;
+}
+
+button{
+    margin-left: 85%;
+    margin-bottom: 1rem;
+}

@@ -1,58 +1,91 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../forms.css">
 
-    
     <title>Fundraiser Request Form</title>
-  </head>
-  <body>
-    <h1>Student Organization Fundraising Request Form</h1>
-      <!--This line will be changed when the form will be submitted.-->  <form>
+</head>
 
-      <!--The label tags are the words in front of the text box.-->
-      <label for="orgName">Organization Name:</label>
-      <input type="text" id="orgName" name="orgName" placeholder="Name" required><br>
-      <!--The input tags are used for getting the input.-->
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Fundraiser</a>
+                    </li>
+                    <!--<li class="nav-item">
+                        <a class="nav-link" href="meetingTracker.html">Meeting Tracker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="studentOrganization.html">Organization</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="checkRequest.html">Check Request</a>
+                    </li>-->
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-      <label for="CPerson">Contact Person:</label>
-      <input type="text" id="CPerson" name="CPerson" placeholder="Contact" required><br>
+    <div class="paper">
+        <h1>Student Organization Fundraising Request Form</h1>
+        <!--This line will be changed when the form will be submitted.-->
+        <form>
 
-      <label for="CEmail">Contact Person Email:</label>
-      <input type="text" id="CEmail" name="CEmail" placeholder="Email" required><br>
+            <!--The label tags are the words in front of the text box.-->
+            <label for="orgName">Organization Name:</label>
+            <input type="text" id="orgName" name="orgName" placeholder="Name" required><br>
+            <!--The input tags are used for getting the input.-->
 
-      <label for="dates">Proposed dates of fundraiser:</label>
-      <input type="text" id="dates" name="dates" placeholder="Dates" required><br>
+            <label for="CPerson">Contact Person:</label>
+            <input type="text" id="CPerson" name="CPerson" placeholder="Contact" required><br>
 
-      <label for="descrip">Description of fundraiser:</label>
-      <input type="text" id="descrip" name="descrip" placeholder="Description" required><br>
+            <label for="CEmail">Contact Person Email:</label>
+            <input type="text" id="CEmail" name="CEmail" placeholder="Email" required><br>
 
-      <label for="location">Location of fundraiser:</label>
-      <input type="text" id="location" name="location" placeholder="Location" required><br>
+            <label for="dates">Proposed dates of fundraiser:</label>
+            <input type="text" id="dates" name="dates" placeholder="Dates" required><br>
 
-      <label for="use">What are the funds being raised for?</label>
-      <input type="text" id="use" name="use" placeholder="Use" required><br>
+            <label for="descrip">Description of fundraiser:</label>
+            <input type="text" id="descrip" name="descrip" placeholder="Description" required><br>
 
-      <label for="upfrontC">Estimated upfront cost to organization:</label>
-      <input type="text" id="upfrontC" name="upfrontC" placeholder="Upfront cost" required><br>
+            <label for="location">Location of fundraiser:</label>
+            <input type="text" id="location" name="location" placeholder="Location" required><br>
 
-      <label for="signature">Advisor's signature:</label>
-      <input type="text" id="signature" name="signature" placeholder="Signature" required><br>
+            <label for="use">What are the funds being raised for?</label>
+            <input type="text" id="use" name="use" placeholder="Use" required><br>
 
-      <button type="reset">Reset Form</button>
-      <button type="submit">Submit</button>
+            <label for="upfrontC">Estimated upfront cost to organization:</label>
+            <input type="text" id="upfrontC" name="upfrontC" placeholder="Upfront cost" required><br>
 
-    </form>
+            <label for="signature">Advisor's signature:</label>
+            <input type="text" id="signature" name="signature" placeholder="Signature" required><br>
+
+            <button type="reset">Reset Form</button>
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
-</html>
+</body></html>

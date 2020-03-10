@@ -8,10 +8,44 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    <title>Check Request Form</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <h1>Student Organization - Check Request Form</h1>
+
+    <form>
+      <label for="paymentTo">Request for payment to:</label>
+      <input type="text" id="paymentTo" name="paymentTo" placeholder="Full name of Payee/Org" required><br>
+
+      <label for="amount">Amount to be paid:</label>
+      <input type="text" id="amount" name="amount" placeholder="Amount to be paid" required><br>
+
+      <label for="reason">Reason for request:</label>
+      <input type="text" id="reason" name="reason" placeholder="Reason" required><br>
+
+      <label for="indiv">Individual requesting check:</label>
+      <input type="text" id="indiv" name="indiv" placeholder="Name of requester" required><br>
+
+      <label for="org">Organization to be charged:</label>
+      <input type="text" id="org" name="org" placeholder="Organization" required><br>
+
+      <label for="date">Indicate what date this check is needed:</label>
+      <input type="text" id="date" name="date" placeholder="Date needed" required><br>
+
+      <label for="sig">2nd signature for approval:</label>
+      <input type="text" id="sig" name="sig" placeholder="Signature" required><br>
+
+      <label for="todaysDate">Today's Date:</label>
+      <input type="text" id="todaysDate" name="todaysDate" placeholder="Today's Date" required><br>
+
+      <label for="comments">Comments:</label>
+      <input type="text" id="comments" name="comments" placeholder="Comments"><br>
+
+      <button type="reset">Reset Form</button>
+      <button type="submit">Submit</button>
+
+    </form>
+  
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

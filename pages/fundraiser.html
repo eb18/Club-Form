@@ -8,10 +8,46 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Hello, world!</title>
+    
+    <title>Fundraiser Request Form</title>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <h1>Student Organization Fundraising Request Form</h1>
+      <!--This line will be changed when the form will be submitted.-->  <form>
+
+      <!--The label tags are the words in front of the text box.-->
+      <label for="orgName">Organization Name:</label>
+      <input type="text" id="orgName" name="orgName" placeholder="Name" required><br>
+      <!--The input tags are used for getting the input.-->
+
+      <label for="CPerson">Contact Person:</label>
+      <input type="text" id="CPerson" name="CPerson" placeholder="Contact" required><br>
+
+      <label for="CEmail">Contact Person Email:</label>
+      <input type="text" id="CEmail" name="CEmail" placeholder="Email" required><br>
+
+      <label for="dates">Proposed dates of fundraiser:</label>
+      <input type="text" id="dates" name="dates" placeholder="Dates" required><br>
+
+      <label for="descrip">Description of fundraiser:</label>
+      <input type="text" id="descrip" name="descrip" placeholder="Description" required><br>
+
+      <label for="location">Location of fundraiser:</label>
+      <input type="text" id="location" name="location" placeholder="Location" required><br>
+
+      <label for="use">What are the funds being raised for?</label>
+      <input type="text" id="use" name="use" placeholder="Use" required><br>
+
+      <label for="upfrontC">Estimated upfront cost to organization:</label>
+      <input type="text" id="upfrontC" name="upfrontC" placeholder="Upfront cost" required><br>
+
+      <label for="signature">Advisor's signature:</label>
+      <input type="text" id="signature" name="signature" placeholder="Signature" required><br>
+
+      <button type="reset">Reset Form</button>
+      <button type="submit">Submit</button>
+
+    </form>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

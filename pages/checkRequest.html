@@ -7,50 +7,82 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="../forms.css">
 
     <title>Check Request Form</title>
-  </head>
-  <body>
-    <h1>Student Organization - Check Request Form</h1>
+</head>
 
-    <form>
-      <label for="paymentTo">Request for payment to:</label>
-      <input type="text" id="paymentTo" name="paymentTo" placeholder="Full name of Payee/Org" required><br>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fundraiser.html">Fundraiser</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="meetingTracker.html">Meeting Tracker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#">Check Request</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="studentOrganization.html">Student Organnization</a>
+                    </li>  
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-      <label for="amount">Amount to be paid:</label>
-      <input type="text" id="amount" name="amount" placeholder="Amount to be paid" required><br>
+    <div class="paper">
+        <h1>Student Organization - Check Request Form</h1>
 
-      <label for="reason">Reason for request:</label>
-      <input type="text" id="reason" name="reason" placeholder="Reason" required><br>
+        <form>
+            <label for="paymentTo">Request for payment to:</label>
+            <input type="text" id="paymentTo" name="paymentTo" placeholder="Full name of Payee/Org" required><br>
 
-      <label for="indiv">Individual requesting check:</label>
-      <input type="text" id="indiv" name="indiv" placeholder="Name of requester" required><br>
+            <label for="amount">Amount to be paid:</label>
+            <input type="text" id="amount" name="amount" placeholder="Amount to be paid" required><br>
 
-      <label for="org">Organization to be charged:</label>
-      <input type="text" id="org" name="org" placeholder="Organization" required><br>
+            <label for="reason">Reason for request:</label>
+            <input type="text" id="reason" name="reason" placeholder="Reason" required><br>
 
-      <label for="date">Indicate what date this check is needed:</label>
-      <input type="text" id="date" name="date" placeholder="Date needed" required><br>
+            <label for="indiv">Individual requesting check:</label>
+            <input type="text" id="indiv" name="indiv" placeholder="Name of requester" required><br>
 
-      <label for="sig">2nd signature for approval:</label>
-      <input type="text" id="sig" name="sig" placeholder="Signature" required><br>
+            <label for="org">Organization to be charged:</label>
+            <input type="text" id="org" name="org" placeholder="Organization" required><br>
 
-      <label for="todaysDate">Today's Date:</label>
-      <input type="text" id="todaysDate" name="todaysDate" placeholder="Today's Date" required><br>
+            <label for="date">Indicate what date this check is needed:</label>
+            <input type="text" id="date" name="date" placeholder="Date needed" required><br>
 
-      <label for="comments">Comments:</label>
-      <input type="text" id="comments" name="comments" placeholder="Comments"><br>
+            <label for="sig">2nd signature for approval:</label>
+            <input type="text" id="sig" name="sig" placeholder="Signature" required><br>
 
-      <button type="reset">Reset Form</button>
-      <button type="submit">Submit</button>
+            <label for="todaysDate">Today's Date:</label>
+            <input type="text" id="todaysDate" name="todaysDate" placeholder="Today's Date" required><br>
 
-    </form>
-  
+            <label for="comments">Comments:</label>
+            <input type="text" id="comments" name="comments" placeholder="Comments"><br>
+
+            <button type="reset">Reset Form</button>
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
-</html>
+</body></html>

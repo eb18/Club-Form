@@ -7,48 +7,81 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+      <link rel="stylesheet" href="../forms.css">
+      
     <title>Meeting/Event Tracker Form</title>
-  </head>
-  <body>
-    <h1>Student Organization - Meeting/Event Tracker Form</h1>
-    <form>
+</head>
 
-    <label for="nameS">Name of Student Organization:</label>
-    <input type="text" id="nameS" name="nameS" placeholder="Name" required><br>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light" id="mainNav">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fundraiser.html">Fundraiser</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#">Meeting Tracker</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="checkRequest.html">Check Request</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="studentOrganization.html">Student Organnization</a>
+                    </li>  
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-    <label for="namerep">Name of Student Organization Representative:</label>
-    <input type="text" id="namerep" name="namerep" placeholder="Name of rep" required><br>
+    <div class="paper">
+        <h1>Student Organization - Meeting/Event Tracker Form</h1>
+        <form>
 
-    <label for="email">Email of Student Organziation Representative:</label>
-    <input type="text" id="email" name="email" placeholder="Email" required><br>
+            <label for="nameS">Name of Student Organization:</label>
+            <input type="text" id="nameS" name="nameS" placeholder="Name" required><br>
 
-    <label for="date">Date of event:</label>
-    <input type="text" id="date" name="date" placeholder="Date of event" required><br>
+            <label for="namerep">Name of Student Organization Representative:</label>
+            <input type="text" id="namerep" name="namerep" placeholder="Name of rep" required><br>
 
-    <label for="time">Time of Meeting/Event:</label>
-    <input type="text" id="time" name="time" placeholder="Time of event" required><br>
+            <label for="email">Email of Student Organziation Representative:</label>
+            <input type="text" id="email" name="email" placeholder="Email" required><br>
 
-    <label for="attend">Number of Attending Members at Meeting/Event:</label>
-    <input type="text" id="attend" name="attend" placeholder="Number in attendance"><br>
+            <label for="date">Date of event:</label>
+            <input type="text" id="date" name="date" placeholder="Date of event" required><br>
 
-    <label for="cost">Cost for Meeting/Event:</label>
-    <input type="text" id="cost" name="cost" placeholder="Cost" required><br>
+            <label for="time">Time of Meeting/Event:</label>
+            <input type="text" id="time" name="time" placeholder="Time of event" required><br>
 
-    <label for="future">Future events:</label>
-    <input type="text" id="future" name="future" placeholder="Future events" required><br>
+            <label for="attend">Number of Attending Members at Meeting/Event:</label>
+            <input type="text" id="attend" name="attend" placeholder="Number in attendance"><br>
 
-    <label for="numMem">Number of Current Members:</label>
-    <input type="text" id="numMem" name="numMem" placeholder="Number of members" required><br>
+            <label for="cost">Cost for Meeting/Event:</label>
+            <input type="text" id="cost" name="cost" placeholder="Cost" required><br>
 
-    <button type="reset">Reset Form</button>
-    <button type="submit">Submit</button>
+            <label for="future">Future events:</label>
+            <input type="text" id="future" name="future" placeholder="Future events" required><br>
 
-    </form>
+            <label for="numMem">Number of Current Members:</label>
+            <input type="text" id="numMem" name="numMem" placeholder="Number of members" required><br>
+
+            <button type="reset">Reset Form</button>
+            <button type="submit">Submit</button>
+
+        </form>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
-</html>
+</body></html>

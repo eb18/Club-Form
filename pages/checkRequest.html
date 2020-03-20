@@ -74,10 +74,40 @@
             <input type="text" id="comments" name="comments" placeholder="Comments"><br>
 
             <button type="reset">Reset Form</button>
-            <button type="submit">Submit</button>
+            <button type="button" onclick="sendMail();">Submit</button>
 
         </form>
     </div>
+    
+    <!--Email Script-->
+    <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
+    
+        <script>
+            function sendMail() {
+                var paymentTo = document.getElementById("paymentTo").value;
+                var amount = document.getElementById("amount").value;
+                var reason = document.getElementById("reason").value;
+                var indiv = document.getElementById("indiv").value;
+                var org = document.getElementById("org").value;
+                var date = document.getElementById("date").value;
+                var sig = document.getElementById("sig").value;
+                var todaysDate = document.getElementById("todaysDate").value;
+                var comments = document.getElementById("comments").value;
+    
+                Email.send({
+                    Host: "smtp.elasticemail.com",
+                    Username: "cottrell.lee@ptcollege.edu",
+                    Password: "8BD8481A64E03595954AC880AF6EA293A46F",
+                    To: "da_cloak10@yahoo.com",
+                    From: "cottrell.lee@ptcollege.edu",
+                    Subject: "Form Data",
+                    Body: "Request for payment to: " + paymentTo +"\nAmount: "+amount+"\nReason for Request: "+reason+"\nIndividual requesting check: "+indiv+"\nOrganization to be charged: "+org+"\nIndicate what date this check is nedded: "+date+"\nSecond signature for approval: "+sig+"\nToday's Date: "+todaysDate+"\nComments: "+comments
+                }).then(
+                    message => alert(message)
+                );
+            }
+        </script>
 
 
     <!-- Optional JavaScript -->

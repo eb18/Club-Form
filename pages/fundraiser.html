@@ -78,7 +78,7 @@
             <input type="text" id="signature" name="signature" placeholder="Signature" required><br>
 
             <button type="reset">Reset Form</button>
-            <button type="submit">Submit</button>
+            <button type="button" onclick="sendMail();">Submit</button>
 
         </form>
     </div>
@@ -88,4 +88,35 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+    
+    <!--Email Script-->
+    <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
+    
+        <script>
+            function sendMail() {
+                var orgName = document.getElementById("orgName").value;
+                var PersonName = document.getElementById("CPerson").value;
+                var Cemail = document.getElementById("CEmail").value;
+                var dateS = document.getElementById("dates").value;
+                var fundraiserD = document.getElementById("descrip").value;
+                var location = document.getElementById("location").value;
+                var fundUse = document.getElementById("use").value;
+                var upfrontC = document.getElementById("upfrontC").value;
+                var signature = document.getElementById("signature").value;
+    
+                Email.send({
+                    Host: "smtp.elasticemail.com",
+                    Username: "cottrell.lee@ptcollege.edu",
+                    Password: "8BD8481A64E03595954AC880AF6EA293A46F",
+                    To: "da_cloak10@yahoo.com",
+                    From: "cottrell.lee@ptcollege.edu",
+                    Subject: "Form Data",
+                    Body: "Organization Name: " + orgName +"\nContact Person: "+PersonName+"\nContect Person Email: "+Cemail+"\nDate: "+dateS+"\nFundraiser Description: "+fundraiserD+"\nLocation: "+location+"\nWhat the funds will go for: "+fundUse+"\nUp front cost: "+upfrontC+"\nSignature: "+signature
+                }).then(
+                    message => alert(message)
+                );
+            }
+        </script>
 </body></html>

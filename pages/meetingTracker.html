@@ -74,10 +74,41 @@
             <input type="text" id="numMem" name="numMem" placeholder="Number of members" required><br>
 
             <button type="reset">Reset Form</button>
-            <button type="submit">Submit</button>
+            <button type="button" onclick="sendMail();">Submit</button>
 
         </form>
     </div>
+    
+    
+    <!--Email Script-->
+    <script src="https://smtpjs.com/v3/smtp.js">
+        </script>
+    
+        <script>
+            function sendMail() {
+                var nameS = document.getElementById("nameS").value;
+                var namerep = document.getElementById("namerep").value;
+                var email = document.getElementById("email").value;
+                var date = document.getElementById("date").value;
+                var time = document.getElementById("time").value;
+                var attend = document.getElementById("attend").value;
+                var cost = document.getElementById("cost").value;
+                var future = document.getElementById("future").value;
+                var numMem = document.getElementById("numMem").value;
+    
+                Email.send({
+                    Host: "smtp.elasticemail.com",
+                    Username: "cottrell.lee@ptcollege.edu",
+                    Password: "8BD8481A64E03595954AC880AF6EA293A46F",
+                    To: "da_cloak10@yahoo.com",
+                    From: "cottrell.lee@ptcollege.edu",
+                    Subject: "Form Data",
+                    Body: "Student Organization Name: " + nameS +"\nName of Student Organization Representative: "+namerep+"\nEmail of Student Organization Representative: "+email+"\nDate: "+date+"\nTime of Meeting/Event: "+time+"\nNumber of Attending Members: "+attend+"\nCost: "+cost+"\nFuture events: "+future+"\nNuber of Current Members: "+numMem
+                }).then(
+                    message => alert(message)
+                );
+            }
+        </script>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
